@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Contact form by youmna</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="contact-form">
+      <h1>Contact Us</h1>
+      <form id="contact" action="#" method="POST">
+        <div>
+          <label for="first-name">First Name<span>*</span></label>
+          <input type="text" id="first-name" name="first-name">
+          <p></p>
+        </div>
+        <div>
+          <label for="last-name">Last Name<span>*</span></label>
+          <input type="text" id="last-name" name="last-name">
+          <p></p>
+        </div>
+        <div class="full">
+          <label for="email">Email Address<span>*</span></label>
+          <input type="email" id="email" name="email">
+          <p></p>
+        </div>
+        <div class="full">
+          <fieldset>
+            <legend>Query Type <span>*</span></legend>
+            <div class="radio" id="radio1">
+              <input type="radio" id="general" name="query-type" value="general">
+              <label for="general">General Enquiry</label>
+            </div>
+            <div class="space"></div>
+            <div class="radio" id="radio2">
+              <input type="radio" id="support" name="query-type" value="support">
+              <label for="support">Support Request</label>
+            </div>
+          </fieldset>
+          <p id="error-radio"></p>
+        </div>
+        <div class="full">
+          <label for="message">Message<span>*</span></label>
+          <textarea rows="3" id="message" name="message"></textarea>
+          <p></p>
+        </div>
+        <div class="full-flex">
+          <input type="checkbox" id="consent" name="consent">
+          <span class="checkmark"></span>
+          <label for="consent">I consent to being contacted by the team<span>*</span></label>
+        </div>
+        <div class="full">
+          <p id="error-consent"></p>
+        </div>
+        <div class="full">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+    </div>
+    <section id="popAlert">
+      <aside>
+        <div>
+          <img src="/assets/images/icon-success-check.svg" alt="">
+          <h2>Message Sent!</h2>
+        </div>
+        <p>Thanks for completing the form *-*!</p>
+      </aside>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
